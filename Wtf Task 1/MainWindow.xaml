@@ -1,0 +1,21 @@
+﻿<Window x:Class="Wtf_Task_1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Wtf_Task_1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <StackPanel x:Name="MyStackPanel">
+            <Button MouseRightButtonUp="Button_MouseRightButtonUp"  Click="Button_Click" Margin="-500,0,0,-200" Width="150" Height="90" Content="1" FontSize="50" Background="Orange"></Button>
+            <Button MouseRightButtonUp="Button_MouseRightButtonUp" Click="Button_Click" Margin="0,0,0,-200" Width="150" Height="90" Content="2" FontSize="50" Background="pink"></Button>
+            <Button MouseRightButtonUp="Button_MouseRightButtonUp" Click="Button_Click" Margin="0,-200,-500,-400" Width="150" Height="90" Content="3" FontSize="50" Background="blue"></Button>
+
+            <Button MouseRightButtonUp="Button_MouseRightButtonUp" Name="Red" Click="Button_Click" Margin="-500,0,0,-600" Width="150" Height="90" Content="4" FontSize="50" Background="Red"></Button>
+            <Button MouseRightButtonUp="Button_MouseRightButtonUp" Click="Button_Click" Margin="0,0,0,-600" Width="150" Height="90" Content="5" FontSize="50" Background="purple"></Button>
+            <Button MouseRightButtonUp="Button_MouseRightButtonUp" Click="Button_Click" Margin="0,-200,-500,-800" Width="150" Height="90" Content="6" FontSize="50" Background="Gray"></Button>
+            
+        </StackPanel>
+    </Grid>
+</Window>
