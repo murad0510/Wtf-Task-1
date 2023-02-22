@@ -26,12 +26,15 @@ namespace Wtf_Task_1
         {
             InitializeComponent();
         }
-
+        Brush randomColor;
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             if (sender is Button bt)
             {
                 this.Background = bt.Background;
+
+                Random r = new Random();
+                randomColor = new SolidColorBrush(Color.FromRgb((byte)r.Next(1, 255), (byte)r.Next(1, 255), (byte)r.Next(1, 233)));
 
                 MessageBox.Show($"I am button {bt.Content}");
             }
