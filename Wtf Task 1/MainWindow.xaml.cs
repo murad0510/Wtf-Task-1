@@ -35,7 +35,7 @@ namespace Wtf_Task_1
 
                 Random r = new Random();
                 randomColor = new SolidColorBrush(Color.FromRgb((byte)r.Next(1, 255), (byte)r.Next(1, 255), (byte)r.Next(1, 233)));
-
+                bt.Background = randomColor;
                 MessageBox.Show($"I am button {bt.Content}");
             }
         }
